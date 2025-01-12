@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './footer.module.css';
-import { FaGithub, FaYoutube, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaYoutube, FaEnvelope, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => {
     const redirectAbout = () => {
@@ -12,10 +12,10 @@ const Footer = () => {
     }
     
     const redirectHome = () => {
-        window.location.href = "/contact";
+        window.location.href = "/";
     }
     const redirectServices = () => {
-        window.location.href = "/contact";
+        window.location.href = "/servies";
     }
 
   return (
@@ -35,17 +35,64 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className={styles.social}>
-        <a href="https://github.com/shivam" target="_blank" rel="noopener noreferrer">
+      {/* <div className={styles.social}>
+        <a href="https://www.instagram.com/paradoxinnovator?igsh=MTRveTg2ZmR4N2VwMg==" >
+          <FaInstagram /> Instagram
+        </ a>
+        <a href="https://www.linkedin.com/company/paradox-innovator/" target="_blank" rel="noopener noreferrer">
+          <FaLinkedinIn /> LinkedIn
+        </ a>
+
+        <a href="https://www.github.com/Paradox-Innovator-Group" target="_blank" rel="noopener noreferrer">
           <FaGithub /> GitHub
         </a>
-        <a href="https://www.youtube.com/paradoxinnovator" target="_blank" rel="noopener noreferrer">
+        <a href="https://youtube.com/@paradoxinnovator?si=6n7EEN_guo3QBTPz" target="_blank" rel="noopener noreferrer">
           <FaYoutube /> YouTube
         </a>
-        <a href="mailto:shivam@example.com">
+        <a href="mailto:info.paradoxinnovator@gmail.com">
           <FaEnvelope /> Email
         </a>
-      </div>
+      </div> */}
+
+<div className={styles.social}>
+  <a 
+    href="https://www.instagram.com/paradoxinnovator" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <FaInstagram /> Instagram
+  </a>
+  
+  <a 
+    href="https://www.linkedin.com/company/paradox-innovator/" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <FaLinkedinIn /> LinkedIn
+  </a>
+  
+  <a 
+    href="https://www.github.com/Paradox-Innovator-Group" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <FaGithub /> GitHub
+  </a>
+  
+  <a 
+    href="https://youtube.com/@paradoxinnovator" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <FaYoutube /> YouTube
+  </a>
+  
+  <a 
+    href="mailto:info.paradoxinnovator@gmail.com"
+  >
+    <FaEnvelope /> Email
+  </a>
+</div>
 
       <div className={styles.footerText}>
         All Rights Reserved | © Shivam Tiwari | 2024
