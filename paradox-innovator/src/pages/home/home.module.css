@@ -1,0 +1,8 @@
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the page grows vertically */
+    width: 100%;
+    background-color: #f9f9f9;
+  }
+  

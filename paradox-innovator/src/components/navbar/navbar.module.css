@@ -1,0 +1,275 @@
+/* .navbar {
+  background: transparent;
+  padding: 0.5rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  height: 80px; 
+}
+
+.navContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.logoContainer {
+  flex-shrink: 0;
+  max-width: 130px; 
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  max-height: 50px; 
+  width: auto;
+  object-fit: contain;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  align-items: center;
+}
+
+.navLink {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+  padding: 0.5rem 0;
+}
+
+.navLink:hover,
+.navLink.active {
+  color: #f44336;
+}
+
+.menuButton {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.menuIcon {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.menuIcon::before,
+.menuIcon::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.menuIcon::before {
+  transform: translateY(-8px);
+}
+
+.menuIcon::after {
+  transform: translateY(8px);
+}
+
+@media screen and (max-width: 768px) {
+  .menuButton {
+    display: block;
+  }
+
+  .navLinks {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    gap: 1.5rem;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .navLinks.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .logoContainer {
+    max-width: 100px; 
+  }
+
+  .logo {
+    max-height: 40px; 
+  }
+} */
+
+
+
+
+.navbar {
+  background: transparent;
+  padding: 0.5rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  height: 80px;
+}
+
+.navContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 ;
+  display: flex;
+  justify-content: flex-start; /* Changed from space-between */
+  align-items: center;
+  height: 100%;
+}
+
+.logoContainer {
+  flex-shrink: 0;
+  max-width: 130px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: auto; /* Added to push the nav links to the right */
+}
+
+.logo {
+  max-height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo:hover {
+  cursor: pointer;
+  transform: scale(1.1); 
+  transition: transform 0.2s ease-in-out; 
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  align-items: center;
+}
+
+.navLink {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+  padding: 0.5rem 0;
+}
+
+.navLink:hover,
+.navLink.active {
+  color: #f44336;
+}
+
+.menuButton {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.menuIcon {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.menuIcon::before,
+.menuIcon::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.menuIcon::before {
+  transform: translateY(-8px);
+}
+
+.menuIcon::after {
+  transform: translateY(8px);
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .navContainer {
+    justify-content: space-between; /* Changed for mobile layout */
+  }
+
+  .menuButton {
+    display: block;
+  }
+
+  .navLinks {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    gap: 1.5rem;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .navLinks.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .logoContainer {
+    max-width: 100px;
+    margin-right: 0; /* Remove margin-right in mobile view */
+  }
+
+  .logo {
+    max-height: 40px;
+  }
+}
